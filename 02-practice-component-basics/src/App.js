@@ -1,8 +1,8 @@
-import keyConceptsImage from './assets/images/key-concepts.png';
 import Concepts from './components/Concepts/Concepts';
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
+import Header from './components/Header/Header';
 
 const App = () => {
   const concepts = [
@@ -31,11 +31,7 @@ const App = () => {
   
   return (
     <div>
-      <header>
-        <img src={keyConceptsImage} alt="Medal badge with a star" />
-        <h1>Key React Concepts</h1>
-        <p>Selected key React concepts you should know about</p>
-      </header>
+      <Header />
       <Concepts items = {concepts}/>
     </div>
   );

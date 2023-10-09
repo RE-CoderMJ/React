@@ -1,4 +1,3 @@
-import './Concept.css';
 import Square from '../UI/Square';
 
 const Concept = (props) => {

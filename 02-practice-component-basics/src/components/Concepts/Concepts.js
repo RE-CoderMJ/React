@@ -1,4 +1,3 @@
-import './Concepts.css';
 import Concept from './Concept';
 
 const Concepts = (props) => {
