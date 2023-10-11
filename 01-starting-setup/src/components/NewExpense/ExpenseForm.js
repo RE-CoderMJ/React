@@ -66,6 +66,13 @@ const ExpenseForm = (props) => {
     setEnteredDate('');
   };
 
+  const [isClosed, setIsClosed] = useState(false);
+
+  const closeTheFormHandler = () => {
+    setIsClosed(true);
+    props.onOpenOrCloseForm(isClosed);
+  }
+
   return (
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
@@ -99,6 +106,7 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button onClick={props.onClose}>Cancel</button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
